@@ -1,0 +1,101 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+
+        stage('Add lib') {
+
+            steps {
+
+                script {
+
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstoneBookingService/BookingService
+                    mvn clean install
+                    """
+
+                }
+
+            }
+
+        }
+
+        stage('Test') {
+
+            steps {
+
+                script {
+
+                    // Run unit tests using Maven
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstoneBookingService/BookingService
+                    mvn test
+                    """
+
+                }
+
+            }
+
+        }
+
+        stage('Package') {
+
+            steps {
+
+                script {
+
+                    sh """
+                        cd /var/lib/jenkins/workspace/capstoneBookingService/BookingService
+                        mvn package
+                    """
+
+                }
+
+            }
+
+        }
+
+        stage('Docker') {
+                    steps {
+                        script {
+
+                            sh """
+                                cd /var/lib/jenkins/workspace/capstoneBookingService/BookingService
+                                docker build -t BookingService .
+
+                            """
+
+                        }
+
+                    }
+        }
+
+    }
+
+    post {
+
+        always {
+
+            // Clean up workspace
+
+            cleanWs()
+
+        }
+
+        success {
+
+            echo 'Build and deployment succeeded!'
+
+        }
+
+        failure {
+
+            echo 'Build or deployment failed.'
+
+        }
+
+    }
+
+}

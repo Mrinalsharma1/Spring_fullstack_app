@@ -1,0 +1,76 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+        stage('Add lib') {
+
+            steps {
+
+                script {
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstoneUserService/UserService
+                    mvn clean install
+                    """
+                }
+            }
+        }
+
+        stage('Test') {
+
+            steps {
+
+                script {
+                    // Run unit tests using Maven
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstoneUserService/UserService
+                    mvn test
+                    """
+                }
+            }
+        }
+
+        stage('Package') {
+
+            steps {
+
+                script {
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstoneUserService/UserService
+                    mvn package
+                    """
+                }
+            }
+        }
+
+        stage('Docker') {
+
+            steps {
+
+                script {
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstoneUserService/UserService
+                    docker build -t userservice .
+                    """
+                }
+            }
+        }
+    }
+
+    post {
+
+        always {
+            // Clean up workspace
+            cleanWs()
+        }
+
+        success {
+            echo 'Build and deployment succeeded!'
+        }
+
+        failure {
+            echo 'Build or deployment failed.'
+        }
+    }
+}

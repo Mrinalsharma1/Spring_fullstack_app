@@ -1,0 +1,100 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+
+        stage('Add lib') {
+
+            steps {
+
+                script {
+
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstoneFeedback/Feedback
+                    mvn clean install
+                    """
+
+                }
+
+            }
+
+        }
+
+        stage('Test') {
+
+            steps {
+
+                script {
+
+                    // Run unit tests using Maven
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstoneFeedback/Feedback
+                    mvn test
+                    """
+
+                }
+
+            }
+
+        }
+
+        stage('Package') {
+
+            steps {
+
+                script {
+
+                    sh """
+                        cd /var/lib/jenkins/workspace/capstoneFeedback/Feedback
+                        mvn package
+                    """
+
+                }
+
+            }
+
+        }
+
+        stage('Docker') {
+                    steps {
+                        script {
+
+                            sh """
+                                cd /var/lib/jenkins/workspace/capstoneFeedback/Feedback
+
+                            """
+
+                        }
+
+                    }
+        }
+
+    }
+
+    post {
+
+        always {
+
+            // Clean up workspace
+
+            cleanWs()
+
+        }
+
+        success {
+
+            echo 'Build and deployment succeeded!'
+
+        }
+
+        failure {
+
+            echo 'Build or deployment failed.'
+
+        }
+
+    }
+
+}

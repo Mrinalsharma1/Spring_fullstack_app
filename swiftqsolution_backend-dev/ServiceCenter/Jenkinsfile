@@ -1,0 +1,101 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+
+        stage('Add lib') {
+
+            steps {
+
+                script {
+
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstoneServiceCenter/ServiceCenter
+                    mvn clean install
+                    """
+
+                }
+
+            }
+
+        }
+
+        stage('Test') {
+
+            steps {
+
+                script {
+
+                    // Run unit tests using Maven
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstoneServiceCenter/ServiceCenter
+                    mvn test
+                    """
+
+                }
+
+            }
+
+        }
+
+        stage('Package') {
+
+            steps {
+
+                script {
+
+                    sh """
+                        cd /var/lib/jenkins/workspace/capstoneServiceCenter/ServiceCenter
+                        mvn package
+                    """
+
+                }
+
+            }
+
+        }
+
+        stage('Docker') {
+                    steps {
+                        script {
+
+                            sh """
+                                cd /var/lib/jenkins/workspace/capstoneServiceCenter/ServiceCenter
+                                docker build -t ServiceCenter .
+
+                            """
+
+                        }
+
+                    }
+        }
+
+    }
+
+    post {
+
+        always {
+
+            // Clean up workspace
+
+            cleanWs()
+
+        }
+
+        success {
+
+            echo 'Build and deployment succeeded!'
+
+        }
+
+        failure {
+
+            echo 'Build or deployment failed.'
+
+        }
+
+    }
+
+}

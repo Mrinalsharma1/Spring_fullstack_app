@@ -1,0 +1,54 @@
+
+.viewslot-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.viewslot-h2 {
+    text-align: center;
+    color: #121058;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.viewslot-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.viewslot-table th,
+.viewslot-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.viewslot-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.viewslot-table td {
+    background-color: #fff;
+}
+
+.viewslot-action{
+    width: 100px
+   
+    
+}
+
+.editicon .viewslot-icon{
+    display: flex;
+    justify-content: center;
+    padding: 5px 25px 5px 25px;
+    color: green;
+
+}
+

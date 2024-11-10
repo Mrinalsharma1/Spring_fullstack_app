@@ -1,0 +1,328 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*********************************    Available and Booked Slots CSS     *************************************/
+.booking-form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+.available {
+  background-color: green;
+  color: white;
+}
+
+.booked {
+  background-color: red;
+  color: white;
+}
+
+.color-legend {
+  margin-top: 20px;
+}
+
+.available-slot,
+.booked-slot {
+  margin: 5px 0;
+}
+
+
+
+/*********************************    Available Slots Background CSS     *************************************/
+
+.available_slot .available_slot_bg {
+  background-image: url("../../assets/images/bookaap2.jpg");
+  background-size: cover; /* Ensures the image covers the element completely */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%;
+  height: 200px; /* Adjust the height based on your requirement */
+}
+
+.available_slot .slot_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  color: white;
+}
+
+
+/*********************************    Body and Container CSS     *************************************/
+/*   
+body {
+  background: linear-gradient(170deg, #f8f9fa, #e0e7ff);
+  font-family: "Open Sans", sans-serif;
+  color: #495057;
+  margin: 0;
+  padding: 10px;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 23px;
+  border-radius: 12px;
+  max-width: 1500px;
+  width: 97% !important;
+  margin: 20px;
+}
+
+h2 {
+  color: #343a40;
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.5px;
+  word-spacing: 2px;
+}
+ */
+/*************************************   Form CSS   ************************************/
+.container .form-group{
+  padding: 10px 60px 10px 60px;
+}
+
+
+.bookingSlot-form {
+  display: block;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 0.375rem 3.25rem 0.375rem 0.55rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: .375rem 2.25rem .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  appearance: none;
+}
+.bookingSlot-form:focus {
+  border-color: #7fbbfb;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.fault-description-text{
+  width:100% ;
+  
+}
+
+.fault-description-text .form-group{
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fault-description-textarea{
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+
+
+/*************************************   Button CSS   ************************************/
+
+.bookingSlot-button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  width: 40%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bookingSlot-button:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  box-shadow: 0 15px 20px rgba(0, 123, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/*************************************   Alerts CSS   ************************************/
+
+.alert-success {
+  margin-top: 20px;
+  background-color: #d4edda;
+  border-color: #13742a;
+  color: #155724;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 5px 15px rgb(247, 245, 245);
+}
+
+/*************************************   Datepicker CSS   ************************************/
+
+/* Wrapper for positioning the icon and input field */
+.date-picker-wrapper {
+  position: relative;
+  display: block;
+  margin: 0; /* Remove negative margins */
+  width: 340px; /* Fixed width on larger screens */
+  align-items: center;
+  margin-top: 0px;
+  
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 20px; /* Adjust right position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10; /* Ensure icon is above other elements */
+}
+
+.my-calendar {
+  position: absolute; /* Position calendar absolutely */
+  top: 40px; /* Adjust as needed to avoid overlap with the input */
+  left: 0; /* Align calendar with input */
+  z-index: 5; /* Ensure calendar is below the icon */
+}
+
+@media screen and (max-width: 480px) {
+  /* General adjustments */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .available_slot .slot_title h2{
+    font-size: 20px;
+  }
+
+  /* Adjust container width */
+  /* .container {
+    padding: 10px;
+    max-width: 100%;
+    
+    border-radius: 8px;
+  } */
+
+  /* Responsive form */
+  .bookingSlot-form
+ {
+  display: block;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 0.375rem 3.25rem 0.375rem 0.25rem;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  }
+
+  .form-select {
+    width: 100%;
+  }
+
+  /* Responsive button */
+  .bookingSlot-button {
+    width: 60%;
+    padding: 15px;
+    
+    font-size: 14px;
+  }
+
+  /* Adjust available and booked slots */
+  .available_slot .available_slot_bg {
+    height: 150px; /* Reduce height on smaller screens */
+  }
+
+  .available-slot,
+  .booked-slot {
+    margin: 10px 0;
+  }
+
+  .slot_title {
+    padding-top: 30px;
+    font-size: 18px;
+  }
+  
+
+  /* Adjust date-picker wrapper */
+  .date-picker-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .calendar-icon {
+    right: 10px; /* Adjust icon position on smaller screens */
+  }
+
+  .my-calendar {
+    top: 35px;
+    width: 100%;
+  }
+
+  /* Reduce margin for alert */
+  .alert-success {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  /* Adjust body styles */
+ 
+  /* Reduce legend margins */
+  .color-legend {
+    margin-top: 10px;
+  }
+
+  /* Adjust width of parent booking slot */
+  .bookingSlot-parent {
+    width: 100%;
+    margin: 0;
+  }
+body {
+    padding:0px;
+}
+.container .row{
+  margin: 0;
+}
+.fault-description-text .form-group{
+  width: 95%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  
+}
+
+.fault-description-textarea{
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.container .form-group{
+  padding: 0;
+}
+
+}

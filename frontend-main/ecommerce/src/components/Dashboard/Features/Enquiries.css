@@ -1,0 +1,93 @@
+.viewMessages {
+    overflow-x: auto;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewMessages table {
+    overflow-y: auto;
+    max-height: 400px;
+    width: auto;
+}
+
+.viewMessages table th,
+.viewMessages table td{
+    padding-left: 30px;
+    vertical-align: middle;
+}
+
+.Messages h2{
+    text-align: center;
+    color:#0a3a49;
+    margin-bottom: 35px;
+    font-family: 'Arial', sans-serif;
+}
+
+.row-id{
+width: 20px;
+}
+.row-name{
+width: 200px;
+}
+
+.row-email{
+    width: 200px;
+}
+.row-phone{
+    width: 250px;
+}
+.row-subject{
+    width: 350px;
+}
+.row-message{
+    width: 300px;
+}
+.row-reply{
+    width: 20px;
+}
+
+.dialog-content-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+    gap: 20px;
+}
+
+.dialog-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: black;
+}
+
+.dialog-content span{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.message-textarea{
+    width: 500px;
+    height: 50px; /* Increase the height of the textarea */
+    padding: 10px; /* Add some padding for better readability */
+    font-size: 16px; /* Set font size */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    resize: vertical; /* Allow only vertical resizing */
+    overflow-y: auto; /* Make text scrollable vertically */
+    box-sizing: border-box;
+    background-color: rgb(235, 235, 235);
+}
+
+.reply-textarea{
+    height: 200px;
+    background-color: rgb(248, 250, 255);
+    padding: 10px;
+}
+.reply-textarea:focus{
+    outline: none; /* Remove default blue outline on focus */
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 2px rgba(0, 123, 255, 0.5); /* Add a soft shadow on focus */
+  }

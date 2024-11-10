@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.working-process {
+  display: flex;
+  height: 479px;
+  
+  background-image: url('../../assets/images/workingprocess-bg.jpg');
+  flex-direction: row;
+  background-size: cover;
+  overflow: hidden;
+  opacity: 1.;
+  align-items: center;
+  background-color: rgba(42, 40, 40, 0.429);
+  position: relative;
+  top: -156px;
+
+  /* position: fixed; */
+
+
+}
+
+.working-process h1 {
+  margin-bottom: 0;
+  color: white;
+ 
+}
+.working-process h2 {
+  color: white;
+  /* padding-top: 20px; */
+}
+
+.spanner-icon {
+  color:#4bb7e6;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.working-process .my-product-container{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.working_process_heading p i{
+  padding-top: 20px ;
+  text-align: center;
+  
+}
+
+
+.product_title_box{
+  margin-top: 10px;
+
+}
+.product_title_box p{
+  margin-left: 55px;
+  color: white;
+}
+
+.working-process .small_box {
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: 6px solid #4bb7e6 !important;
+  background-color: #4bb7e6 !important;
+  color: aliceblue;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  z-index: 1;
+  position: relative;
+  left: 35px;
+  top: 65px;
+}
+
+.working-process .big_box {
+  justify-content: center;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  border: 3px solid white !important;
+  border-radius: 50% !important;
+  height: 95px;
+  width: 95px;
+}
+
+
+@media (max-width: 768px) {
+
+  .working_process_heading p{
+   line-height: 0px;
+   rotate: 43deg;
+   margin-top: -20px;
+   font-size: 20px;
+
+   
+  }
+  .working-process {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .working-process h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .working-process .product_top_box {
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+
+  .my-product-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 0 15px;
+  }
+
+  .working-process .small_box {
+    height: 35px;
+    width: 35px;
+    padding: 10px;
+    left: 10px;
+    top: 0px !important
+    
+  }
+
+  .working-process .big_box {
+    height: 80px;
+    width: 80px;
+    padding: 20px;
+  }
+
+
+  .working-process .small_box, 
+  .working-process .big_box {
+    margin: 0;
+    top: 21px;
+    right: 24px;
+    transform: none;
+  }
+
+  
+.working-process .product_title_box{
+  margin-right: 140px;
+  margin-top: 5px;
+
+}
+
+  .working-process .product_top_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 120px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  /* .working-process h1 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+  } */
+
+  /* .working-process h2 {
+    font-size: 1rem;
+  
+  } */
+
+  .working-process{
+    margin-top: 156px;
+
+  }
+
+  .working-process h2 {
+    color: white;
+    padding-top: 20px;
+}
+
+
+  .working-process .small_box {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+  }
+
+  .working-process .big_box {
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+    margin-right: 50px !important;
+  }
+
+  .working-process .product_top_box {
+    margin-bottom: 40px;
+    padding: 2px;
+  
+  }
+
+  .my-product-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    
+
+  }
+
+
+  .working-process .small_box, 
+  .working-process .big_box {
+    position: relative;
+    transform: none;
+    top: auto;
+    right: auto;
+    margin: 0;
+    justify-content: center;
+
+  }
+
+  .product_title_box p {
+    color: white;
+    width: -14px;
+    /* background-color: green; */
+    width: 188px;
+    font-size: 23px;
+}
+  
+.working-process .product_title_box{
+  margin-right: 200px;
+  
+
+}
+}
+
+
+@media (max-width: 320px) {
+  .working-process h1 {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  
+
+  .working-process .small_box {
+    height: 20px;
+    width: 20px;
+    padding: 6px;
+  }
+
+  .working-process .big_box {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+  }
+
+  .working-process .product_top_box {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  .my-product-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 5px;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "user": [
+    {
+      "id": "80560402-f37d-47d4-85bb-17dd6f095ac9",
+      "name": "Himangshu",
+      "email": "himangshudas@gmail.com",
+      "password": "@HappyHimangshu99",
+      "role": "user"
+    },
+    {
+      "id": "1a47aa51-f11b-4d74-8a29-0a852b2759ee",
+      "name": "Abhijeet",
+      "email": "abhisurana@gmail.com",
+      "password": "1AbhiSurana@123",
+      "role": "user"
+    },
+    {
+      "id": "a3f92bec-9796-4194-9494-8d37bf186b53",
+      "name": "Himangshu",
+      "email": "something@gmail.com",
+      "password": "Himangshu@987",
+      "role": "user"
+    }
+  ]
+}

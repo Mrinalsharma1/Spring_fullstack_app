@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+
+h2{
+    font-size:40px;
+    font-family: "Titillium Web", sans-serif;
+    font-style: normal;
+    
+}
+/* dashboard h2 */
+.sidebar-brand h2{
+    font-size:27px !important;
+    font-family: "Titillium Web", sans-serif;
+    font-style: normal;
+    color: white;
+   
+}
+.form-control {
+    width: 100% !important;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+

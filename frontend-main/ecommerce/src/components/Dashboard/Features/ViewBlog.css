@@ -1,0 +1,69 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root {
+    --logo-color: #F1F1F1;
+    --text-color: #F1F1F1;
+    --hover-background-color: #D3C5E5;
+    --background-btn-color: #0c0d4d;
+   
+  }
+
+  .icons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+.save{   
+    
+    outline: none;
+    
+    
+    color:#F1F1F1
+}
+.view_save_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 55px;
+    background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    
+}
+.view_save_button:hover{
+    background-color: #0c0d4d;
+    color: #F1F1F1;
+
+}
+.edit{
+    height: 40px;
+    width: 40px;
+    background-color: var(--background-btn-color);
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.delete{
+    height: 40px;
+    width: 40px;
+   
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.icons .edit, .icons .delete {
+    border: none; /* Remove border */
+    background: none; /* Remove background if any */
+    padding: 0; /* Adjust padding if needed */
+}
+
+
+
+

@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.available_slot .available_slot_bg{
+    background-image: url("../../assets/images/available_slots.jpg");
+    background-size: cover; /* Ensures the image covers the element completely */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%;
+    height: 200px; /* Adjust the height based on your requirement */
+}
+.available_slot .slot_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    color: white;
+}
+.availablep{
+  color:white;
+
+}
+.availablep:hover{
+  color:#60c5e4;
+}
+  
+.fully-booked {
+  background-color: #ffcccc !important;
+  color: #ff0000 !important;
+  pointer-events: none;
+}
+
+.available{
+  background-color: forestgreen !important;
+  color: white !important;
+}

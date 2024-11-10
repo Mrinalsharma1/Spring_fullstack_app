@@ -1,0 +1,36 @@
+.myAvatar .dropdown-menu
+{
+    background-color: rgba(96, 197, 228, 0.6);
+    border: 1px solid white;  
+    padding: 0;
+}
+
+.myAvatar .dropdown-menu .dropdown-item{
+    color: black;
+    padding: 10px;
+}
+.myAvatar .dropdown-menu .dropdown-item i{
+    font-size: 15px;
+    margin-right: 10px;
+    color: black;
+}
+
+.myAvatar .dropdown-menu :hover{
+    border: 1px solid #60c5e4;
+    border-radius: 5px;
+    color: #60c5e4;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.myAvatar .dropdown-menu .dropdown-item:hover i {
+    color: white;
+}
+.separator-line{
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 480px){
+    .dropdown-menu-end{
+       /* right: 300px; */
+    }
+}

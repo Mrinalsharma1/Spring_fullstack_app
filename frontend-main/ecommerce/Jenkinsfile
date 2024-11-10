@@ -1,0 +1,75 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstonefrontend/ecommerce
+                    pwd
+                    npm install --force
+                    """
+                }
+            }
+        }
+
+        stage('Test') {
+            steps {
+                script {
+                    // Run unit tests
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstonefrontend/ecommerce
+                    
+                    """
+                }
+            }
+        }
+
+        stage('Build') {
+            steps {
+                script {
+                    // Build the React app for production code
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstonefrontend/ecommerce
+                    CI=false npm run build
+                    """
+                }
+            }
+        }
+
+        stage('Dockerize') {
+            steps {
+                script {
+                    // Build the Docker image
+                    sh """
+                    cd /var/lib/jenkins/workspace/capstonefrontend/ecommerce
+                    docker build -t ecommerce .
+                    docker run -d -p 3000:80 ecommerce
+                    """
+                }
+            }
+        }
+
+    }
+
+    post {
+
+        always {
+            // Clean up workspace
+            cleanWs()
+        }
+
+        success {
+            echo 'Build and deployment succeeded!'
+        }
+
+        failure {
+            echo 'Build or deployment failed.'
+        }
+
+    }
+
+}

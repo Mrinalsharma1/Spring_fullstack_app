@@ -1,0 +1,443 @@
+{
+  "user": [
+    {
+      "id": "80560402-f37d-47d4-85bb-17dd6f095ac9",
+      "name": "Himangshu",
+      "email": "himangshudas@gmail.com",
+      "password": "@HappyHimangshu99",
+      "role": "user"
+    },
+    {
+      "id": "4d3e823a-934b-45b6-b116-2e930ec93cae",
+      "name": "Aniket",
+      "email": "aniket@gmail.com",
+      "password": "Aniket@123",
+      "role": "user"
+    },
+    {
+      "id": "cdcefb36-2921-4176-8693-ebefa5293954",
+      "name": "Preethi B",
+      "email": "preethi@gmail.com",
+      "password": "Preethi@123",
+      "role": "user"
+    }
+  ],
+  "address": [
+    {
+      "id": "01",
+      "state": "Karnataka",
+      "city": "Bengaluru",
+      "pin": "560063",
+      "addressLine": "Building 12, 3rd Main, 5th Cross, Whitefield",
+      "contact": "9876543210",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "02",
+      "state": "Karnataka",
+      "city": "Mysuru",
+      "pin": "570001",
+      "addressLine": "Plot 15, 2nd Main, 4th Cross, Gokulam",
+      "contact": "9876543211",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "03",
+      "state": "Karnataka",
+      "city": "Mangaluru",
+      "pin": "575001",
+      "addressLine": "Apartment 7, Bejai Road, Hampankatta",
+      "contact": "9876543212",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "04",
+      "state": "Karnataka",
+      "city": "Hubballi",
+      "pin": "580020",
+      "addressLine": "House 34, 1st Main, Vidya Nagar",
+      "contact": "9876543213",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "05",
+      "state": "Andhra Pradesh",
+      "city": "Visakhapatnam",
+      "pin": "530001",
+      "addressLine": "Flat 21, Beach Road, MVP Colony",
+      "contact": "9876543214",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "06",
+      "state": "Andhra Pradesh",
+      "city": "Vijayawada",
+      "pin": "520001",
+      "addressLine": "House 10, 4th Cross, MG Road",
+      "contact": "9876543215",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "07",
+      "state": "Andhra Pradesh",
+      "city": "Guntur",
+      "pin": "522001",
+      "addressLine": "Building 18, Main Street, Brodipet",
+      "contact": "9876543216",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "08",
+      "state": "Andhra Pradesh",
+      "city": "Tirupati",
+      "pin": "517501",
+      "addressLine": "Plot 8, 2nd Cross, AIR Bypass Road",
+      "contact": "9876543217",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "09",
+      "state": "Andhra Pradesh",
+      "city": "Nellore",
+      "pin": "524001",
+      "addressLine": "Apartment 9, 1st Main, Ramji Nagar",
+      "contact": "9876543218",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "10",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "pin": "400001",
+      "addressLine": "Building 11, Marine Drive, Colaba",
+      "contact": "9876543219",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "11",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "pin": "411001",
+      "addressLine": "Flat 5, FC Road, Shivajinagar",
+      "contact": "9876543220",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "12",
+      "state": "Maharashtra",
+      "city": "Nagpur",
+      "pin": "440001",
+      "addressLine": "Plot 21, Wardha Road, Dhantoli",
+      "contact": "9876543221",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "id": "13",
+      "state": "Maharashtra",
+      "city": "Aurangabad",
+      "pin": "431001",
+      "addressLine": "House 4, 5th Main, Cidco",
+      "contact": "9876543222",
+      "location": "https://www.google.com/maps/place/12%C2%B057'36.4%22N+77%C2%B034'25.2%22E/@12.9601078,77.5736678,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9601078!4d77.5736678?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D",
+      "workingHours": "9:00 AM - 6:00 PM"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Mobile"
+    },
+    {
+      "id": "2",
+      "name": "Laptop"
+    },
+    {
+      "id": "3",
+      "name": "Tablet"
+    },
+    {
+      "id": "4",
+      "name": "Accessories"
+    }
+  ],
+  "purchasedFrom": [
+    {
+      "id": "1",
+      "name": "Samsung Store"
+    },
+    {
+      "id": "2",
+      "name": "Amazon"
+    },
+    {
+      "id": "3",
+      "name": "Apple Store"
+    },
+    {
+      "id": "4",
+      "name": "MI Stores"
+    },
+    {
+      "id": "5",
+      "name": "Sangeeta Mobiles"
+    },
+    {
+      "id": "6",
+      "name": "Poorvika Mobiles"
+    },
+    {
+      "id": "7",
+      "name": "Flipkart"
+    },
+    {
+      "id": "8",
+      "name": "Tata Cliq"
+    },
+    {
+      "id": "9",
+      "name": "Others"
+    }
+  ],
+  "serviceTypes": [
+    {
+      "id": "1",
+      "name": "Repair"
+    },
+    {
+      "id": "2",
+      "name": "Maintenance"
+    }
+  ],
+  "timeSlots": [
+    {
+      "id": "1",
+      "slot": "09:00 AM - 10:00 AM"
+    },
+    {
+      "id": "2",
+      "slot": "10:00 AM - 11:00 AM"
+    },
+    {
+      "id": "3",
+      "slot": "11:00 AM - 12:00 PM"
+    },
+    {
+      "id": "4",
+      "slot": "12:00 PM - 01:00 PM"
+    },
+    {
+      "id": "5",
+      "slot": "01:00 PM - 02:00 PM"
+    },
+    {
+      "id": "6",
+      "slot": "02:00 PM - 03:00 PM"
+    },
+    {
+      "id": "7",
+      "slot": "03:00 PM - 04:00 PM"
+    },
+    {
+      "id": "8",
+      "slot": "04:00 PM - 05:00 PM"
+    },
+    {
+      "id": "9",
+      "slot": "05:00 PM - 06:00 PM"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "dd8d"
+    },
+    {
+      "id": "516e",
+      "product": "Mobile",
+      "purchasedFrom": "Samsung Store",
+      "serviceType": "Repair",
+      "pincode": "570001",
+      "customerName": "Madhav",
+      "email": "madhu@gmail.com",
+      "mobile": "7887654456",
+      "city": "Mysuru",
+      "state": "Karnataka",
+      "address": "Plot 15, 2nd Main, 4th Cross, Gokulam",
+      "preferredDate": "2024-10-14",
+      "preferredTimeSlot": "09:00 AM - 10:00 AM",
+      "faultDescription": "gvhjv"
+    },
+    {
+      "id": "e528",
+      "product": "Tablet",
+      "purchasedFrom": "Flipkart",
+      "serviceType": "Maintenance",
+      "pincode": "570001",
+      "customerName": "Vedant",
+      "email": "veds@gmail.com",
+      "mobile": "6748734549",
+      "city": "Mysuru",
+      "state": "Karnataka",
+      "address": "Plot 15, 2nd Main, 4th Cross, Gokulam",
+      "preferredDate": ["2024-10-14", "08:46:07.502Z"],
+      "preferredTimeSlot": "09:00 AM - 10:00 AM",
+      "faultDescription": "vhgui"
+    },
+    {
+      "id": "cba2",
+      "product": "Laptop",
+      "purchasedFrom": "Poorvika Mobiles",
+      "serviceType": "Repair",
+      "pincode": "570001",
+      "customerName": "Mrinal Sharma",
+      "email": "murnal@gmail.com",
+      "mobile": "7887654456",
+      "city": "Mysuru",
+      "state": "Karnataka",
+      "address": "Plot 15, 2nd Main, 4th Cross, Gokulam",
+      "preferredDate": ["2024-10-14", "08:48:59.045Z"],
+      "preferredTimeSlot": "09:00 AM - 10:00 AM",
+      "faultDescription": "jbkjbjb"
+    },
+    {
+      "id": "d217",
+      "product": "Mobile",
+      "purchasedFrom": "Tata Cliq",
+      "serviceType": "Repair",
+      "pincode": "570001",
+      "customerName": "Anand",
+      "email": "ahsbsns@gmail.com",
+      "mobile": "7887654456",
+      "city": "Mysuru",
+      "state": "Karnataka",
+      "address": "Plot 15, 2nd Main, 4th Cross, Gokulam",
+      "preferredDate": "2024-10-14T08:56:01.965Z",
+      "preferredTimeSlot": "05:00 PM - 06:00 PM",
+      "faultDescription": "ihjihn"
+    },
+    {
+      "id": "d784",
+      "product": "Laptop",
+      "purchasedFrom": "Flipkart",
+      "serviceType": "Repair",
+      "pincode": "570001",
+      "customerName": "Anand",
+      "email": "ahsbsns@gmail.com",
+      "mobile": "9782653722",
+      "city": "Mysuru",
+      "state": "Karnataka",
+      "address": "Plot 15, 2nd Main, 4th Cross, Gokulam",
+      "preferredDate": "2024-10-14T08:57:16.324Z",
+      "preferredTimeSlot": "05:00 PM - 06:00 PM",
+      "faultDescription": "uhbkj"
+    },
+    {
+      "id": "f118",
+      "product": "Laptop",
+      "purchasedFrom": "Flipkart",
+      "serviceType": "Repair",
+      "pincode": "580020",
+      "customerName": "Anand",
+      "email": "ahsbsns@gmail.com",
+      "mobile": "6748734549",
+      "city": "Hubballi",
+      "state": "Karnataka",
+      "address": "House 34, 1st Main, Vidya Nagar",
+      "preferredDate": ["2024-10-14", "08:59:37.967Z"],
+      "preferredTimeSlot": "05:00 PM - 06:00 PM",
+      "faultDescription": "ihibijbjk"
+    },
+    {
+      "id": "f9cd",
+      "product": "Laptop",
+      "purchasedFrom": "Tata Cliq",
+      "serviceType": "Repair",
+      "pincode": "570001",
+      "customerName": "Madhav",
+      "email": "madhu@gmail.com",
+      "mobile": "8762787666",
+      "city": "Mysuru",
+      "state": "Karnataka",
+      "address": "Plot 15, 2nd Main, 4th Cross, Gokulam",
+      "preferredDate": ["2024-10-14", "09:01:03.769Z"],
+      "preferredTimeSlot": "09:00 AM - 10:00 AM",
+      "faultDescription": "kinjbjk"
+    },
+    {
+      "id": "68c2",
+      "product": "Laptop",
+      "purchasedFrom": "Flipkart",
+      "serviceType": "Maintenance",
+      "pincode": "570001",
+      "customerName": "Vedant",
+      "email": "veds@gmail.com",
+      "mobile": "6748734549",
+      "city": "Mysuru",
+      "state": "Karnataka",
+      "address": "Plot 15, 2nd Main, 4th Cross, Gokulam",
+      "preferredDate": ["2024-10-14", "09:10:03.793Z"],
+      "preferredTimeSlot": "09:00 AM - 10:00 AM",
+      "faultDescription": "screen issues"
+    },
+    {
+      "id": "eb87",
+      "product": "Laptop",
+      "purchasedFrom": "Amazon",
+      "serviceType": "Repair",
+      "pincode": "570001",
+      "customerName": "Madhav",
+      "email": "madhu@gmail.com",
+      "mobile": "9782653722",
+      "city": "Mysuru",
+      "state": "Karnataka",
+      "address": "Plot 15, 2nd Main, 4th Cross, Gokulam",
+      "preferredDate": "10/14/2024, 2:49:32 PM",
+      "preferredTimeSlot": "01:00 PM - 02:00 PM",
+      "faultDescription": "gyfuttyv"
+    },
+    {
+      "id": "283e",
+      "product": "Tablet",
+      "purchasedFrom": "Flipkart",
+      "serviceType": "Maintenance",
+      "pincode": "560063",
+      "customerName": "Himesh",
+      "email": "veds@gmail.com",
+      "mobile": "6748734549",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "Building 12, 3rd Main, 5th Cross, Whitefield",
+      "preferredDate": "10/14/2024",
+      "preferredTimeSlot": "04:00 PM - 05:00 PM",
+      "faultDescription": "hjbihbjb"
+    }
+  ],
+  "newcenter": [
+    {
+      "id": "29f1"
+    },
+    {
+      "id": "f355",
+      "address_line": "66, garden layout",
+      "open_hours_from": "10:00 AM",
+      "open_hours_to": "06:00 PM",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "570004",
+      "service": "All types of services",
+      "map": "efibjbejlngkjgeas",
+      "phone": "9857464654"
+    }
+  ]
+}

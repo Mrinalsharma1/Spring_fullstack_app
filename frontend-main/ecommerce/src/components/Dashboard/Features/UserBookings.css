@@ -1,0 +1,116 @@
+/* Container for the table */
+.userbookings-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Table title */
+.userbookings-h2 {
+    text-align: center;
+    color: #121058;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Table structure */
+.userbookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed; /* Ensure fixed table layout */
+}
+
+/* Table headers */
+.userbookings-table th {
+    background-color: #121058;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Table rows */
+.userbookings-table td {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    text-align: center;
+    word-wrap: break-word; /* Ensure text wraps within cells */
+}
+
+/* Hover effect for table rows */
+.userbookings-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Action buttons */
+.userbookings-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+/* Button base styles */
+.userbookings-action .MuiButton-contained {
+    border: none;
+    border-radius: 5px;
+    font-size: 12px; /* Adjust font size for better fit */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 5px 10px; /* Adjust padding for better fit */
+}
+
+/* Confirm button */
+.userbookings-action .MuiButton-containedPrimary {
+    background-color: #121058 !important; /* Dark blue color */
+    color: white;
+    align-items: center;
+}
+
+/* Confirm button hover effect */
+.userbookings-action .MuiButton-containedPrimary:hover {
+    background-color: #00008b;
+}
+
+/* Complete button */
+.userbookings-action .MuiButton-containedSecondary {
+    background-color: #ff5722 !important; /* Orange color */
+    color: white;
+    align-items: center;
+}
+
+/* Complete button hover effect */
+.userbookings-action .MuiButton-containedSecondary:hover {
+    background-color: #e64a19;
+}
+
+/* Alert base styles */
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Success alert */
+.alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+/* Error alert */
+.alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+}

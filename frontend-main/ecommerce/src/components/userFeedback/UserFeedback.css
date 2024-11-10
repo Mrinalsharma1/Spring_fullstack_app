@@ -1,0 +1,146 @@
+.user-feedback {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.feedback-image {
+    margin: auto;
+    width: 45%;
+}
+
+.feedback-image img {
+    width: 100%;
+}
+
+.feedback-fields {
+    margin: auto;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-fields .headings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.review-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.review-field input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.review-field input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+    outline: none;
+}
+
+.review-field textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.review-field textarea:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+    outline: none;
+}
+
+.review-action {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.review-action button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #60c5e4;
+    color: white;
+}
+
+.review-action button:hover {
+    background-color: white;
+    color: #60c5e4;
+    border: 1px solid #60c5e4;
+}
+
+.review-action button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+}
+
+/* Media Query for smaller screens (480px and below) */
+@media (max-width: 480px) {
+    .user-feedback {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .feedback-image,
+    .feedback-fields {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .feedback-fields {
+        gap: 15px;
+    }
+
+    .feedback-fields .headings {
+        font-size: 20px;
+    }
+
+    .review-field input,
+    .review-field textarea {
+        width: 100%;
+    }
+
+    .review-action {
+        justify-content: center;
+    }
+
+    .review-action button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

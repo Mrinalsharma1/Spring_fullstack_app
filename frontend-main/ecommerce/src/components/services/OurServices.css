@@ -1,0 +1,152 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .services_bg{
+  background-image: url("../../assets/images/services5.jpg");
+  background-size:cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  width: 100%!important;
+  height: 200px; 
+} 
+.services_title{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    color: white;
+}
+.our-services-head {
+  text-align: center;
+}
+
+.our-services-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+
+.our-services-container {
+  height: auto;
+  width: 100%;
+  margin-top:30px;
+  display: flex;
+  flex-wrap: wrap; /* Ensures the cards wrap to a new line on smaller screens */
+  justify-content: space-around;
+  gap: 20px; /* Adds space between cards */
+  margin-bottom:40px;
+}
+
+.service-cardp {
+  width: 100%; 
+  max-width: 350px; /* Limits the width for larger screens */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effects */
+}
+
+.service_card {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden; /* Ensures the overlay doesn't overflow */
+}
+
+.our-services-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Smooth corner rounding */
+}
+
+.service-overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #60c5e4;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.service_card:hover .service-overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.our-services-text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width:70%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.services-button {
+  position: absolute;
+  bottom: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 18px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 16px;
+  
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.services-button:hover {
+  color: #60c5e4;
+  background-color: white;
+}
+
+.our-services-head {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.our-services-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+
+ 
+  .services_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    color: #60c5e4;
+  }
+  .our-services-head {
+    text-align: center;
+}
+
+.our-services-title {
+    font-size: 18px;
+    margin: 0;
+}
+.our-services-head h4{
+  padding:7px;
+}
+/*service page css*/

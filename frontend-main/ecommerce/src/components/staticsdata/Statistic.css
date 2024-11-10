@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.counter-container {
+    background-image: url('../../assets/images/counter-bg.jpg');  
+    background-size: cover;   
+    background-position: center;  
+    background-repeat: no-repeat; 
+    padding: 50px 0;   
+    color: white;   
+    text-align: center;
+  }
+  
+  .counter-container .single-counter {
+    padding: 20px;
+  }
+  
+  .counter-container .count-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .counter-container .count-text {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+   color:white;
+  }
+  
+  .counter-container .text {
+    font-size: 18px;
+    margin-top: 10px;
+    color:white;
+  }
+  
+  
+  @media (max-width: 480px) {
+    .counter-container{
+        margin-top: 80px;
+    }
+  }

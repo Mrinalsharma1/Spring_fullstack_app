@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body, input {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9; /* Soft background color for a clean look */
+  color: #333;
+}
+
+.mycontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 90vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #cedeff, #e1e1e1);
+  width: 100%; /* Set width to 100% */
+  max-width: none; /* Remove max-width */
+}
+
+
+.mycontainer img {
+  width: 40%;
+  border-radius: 15px;
+  height: 90%;
+}
+
+.forms-mycontainer {
+  width: 50%;
+  max-width: 400px;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-field {
+  max-width: 100%;
+  background-color: #f0f0f0;
+  margin: 15px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.5rem;
+  position: relative;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft inner shadow */
+}
+
+/* .input-field .i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  font-size: 1.2rem;
+} */
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  padding-left: 0.5rem;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.mybtn {
+  width: 100%;
+  background-color: #5995fd;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+}
+
+.mybtn:hover {
+  background-color: #4d84e2;
+  transform: translateY(-2px); /* Slight hover lift */
+}
+
+.social-text {
+  padding: 1rem 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #333;
+  border-radius: 50%;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #4481eb;
+  border-color: #4481eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+
+@media (max-width: 768px) {
+  .mycontainer {
+    padding: 1rem;
+  }
+
+  .mycontainer img {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .forms-mycontainer {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .input-field {
+    height: 50px;
+    margin: 10px 0;
+  }
+
+  .mybtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .input-field {
+    height: 45px;
+  }
+
+  .mybtn {
+    height: 45px;
+  }
+}

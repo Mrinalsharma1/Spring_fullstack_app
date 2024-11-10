@@ -1,0 +1,211 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ .location-hero-bg{
+  background-image: url("../../assets/images/service_center.jpg");
+  background-size: cover; /* Ensures the image covers the element completely */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%;
+  height: 200px; /* Adjust the height based on your requirement */
+}
+.location-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  color: white;
+}
+.servicep{
+  color:white;
+}
+.servicep:hover{
+  color:#60c5e4;
+}
+.displayCenter {
+  max-width: 100%; /* Set a maximum width for responsiveness */
+  margin: 0 auto; /* Center element horizontally */
+  padding: 20px;
+  border-radius: 4px; /* Optional rounded corners */
+}
+
+.location-heading{
+  text-align: center;
+}
+
+
+/* Search Section */
+
+
+.service-center-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distribute elements evenly */
+  /* gap: 50px; */
+  margin-bottom: 5px;
+}
+
+.searchPin input{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+}
+.service-center-container 
+.searchPin,
+.service-center-container .searchState,
+.service-center-container .searchCity {/* Make state and city sections equal width */
+  margin-bottom: 15px;
+  width: 400px;
+  
+}
+
+.service-center-container .searchCity input {
+  background-color: #eee; /* Light background for button */
+  width: 100%;
+}
+.service-center-container .searchState input{
+  background-color: #eee; /* Light background for button */
+  width: 100%;
+}
+
+.service-center-container .searchState .form-control {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-control option {
+  padding: 5px 10px;
+}
+
+
+/* address  */
+
+.address-container {
+width: 100%;
+}
+.address-info{
+ width: 40%;
+}
+
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+
+.address-card {
+ 
+  width: calc(50% - 20px); 
+  border: 1px solid #cbcbcb;
+  border-radius: 4px;
+  margin-bottom: 10px;
+ 
+}
+.address-card .contact{
+  padding: 0 10px 10px 10px;
+}
+.address-card .contact hr{
+  height: 1px; /* Adjust this value for thickness */
+  background-color: #000; /* You can set the color here */
+  border: none; /* Remove any default border */
+}
+
+.address-card h5{
+  font-weight: 600;
+}
+
+.address-box{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px 0 10px;
+  gap: 10px;
+}
+
+
+
+.address-container .nav-link p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.address-container .nav-link i{
+    font-size: 20px;
+    margin-right:5px;
+    /* font-weight: 200; */
+}
+
+
+.searchState select{
+  width: 100%;
+}
+
+/* Media Queries for Responsiveness (Optional) */
+
+@media (max-width: 480px)  {
+  /* Adjust styles for smaller screens */
+  .displayCenter {
+    max-width: 90%; /* Increase max-width for smaller screens */
+  }
+
+  .service-center-container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .searchState,
+  .searchCity {
+    flex: auto; 
+    margin-bottom: 10px; /* Adjust spacing for vertical layout */
+  }
+  
+
+  .address-box {
+    width: calc(50% - 15px); /* Adjust address card width for 2 columns */
+    flex-direction: column;
+  }
+  .searchPin,
+  .searchState,
+  .searchCity 
+  {
+  margin-bottom: 15px;
+  width: 200px;
+  }
+  .card-list{
+    flex-direction: column;
+  }
+  .address-card,
+  .address-box,
+  .address-info
+  {
+    width: 100%;
+  }
+ 
+ 
+  .service-center-container .searchState .form-control{
+    width: 345px !important;
+  }
+  .service-center-container .searchCity .form-control{
+    width: 345px !important;
+  }
+
+  
+  .service-center-container 
+.searchPin,
+.service-center-container .searchState,
+.service-center-container .searchCity {/* Make state and city sections equal width */
+  margin-bottom: 15px;
+  width: 350px;
+  
+}
+ 
+}
+

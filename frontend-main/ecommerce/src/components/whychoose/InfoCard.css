@@ -1,0 +1,101 @@
+.info-card-container {
+    position: relative; /* Required for the overlay */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Adjust alignment */
+    background-image: url('../../assets/images/cta-bg.jpg'); /* Your background image path */
+    background-size: cover;
+    background-position: center;
+    height: 270px;
+
+}
+
+
+/* Content inside the container */
+.info-card-container .content {
+    position: relative;
+    color: #fff; /* White text for contrast */
+    padding: 20px; /* Optional padding for spacing */
+}
+
+
+.info-card-image {
+  width: 30%;
+}
+
+.info-card-content {
+    /* position: absolute; */
+    width: 50%;
+
+}
+.info-card-button {
+    width:20%;
+
+}
+.info-card-button button {
+  margin-top: 80px;
+  height: 30px;
+  width: 180px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  background-color: #60c5e4;
+  font-weight: 500;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 5px;
+}
+.heading-color {
+  color: #60c5e4;
+}
+.info-card-content p {
+  color: #fff;
+  margin-top: 10px;
+}
+.info-card-content h2 {
+  color: #fff;
+}
+.info-card-button button:hover {
+  border: 1px solid #60c5e4;
+  color: #60c5e4;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+@media (max-width: 480px)  {
+  .info-card-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height:295px;
+
+    
+  }
+  .info-card-container img {
+    position: relative;
+    height: 159px !important;
+    width: 160px !important;
+    left: -147px;   
+    top: 10px;
+  }
+  .info-card-content{
+    position: absolute;
+    top: 45px;
+    /* margin-top: -100px; */
+  }
+  
+  .info-card-button {
+    position: absolute;
+    top: 140px;
+    right: 210px;
+    
+    
+  }
+  .info-card-container h2 {
+    font-size: 29px;
+  }
+  .info-card-container .info-card-content{
+    width: 92%;
+    padding-top: 76px;
+  }
+}

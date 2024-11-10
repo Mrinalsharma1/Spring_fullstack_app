@@ -1,0 +1,109 @@
+.card-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* height: 80vh; */
+    /* background-color: #eaeaea; */
+}
+
+.service-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out; /* Add hover effect 
+    transition */
+   
+
+  }
+  .service-title{
+    text-align:center;
+    margin-top: 20px;
+  }
+  .service-logo{
+    text-align: center;
+    margin-top:10px;
+   
+  }
+  
+  
+
+  .icon-container {
+    position: absolute;
+    left: -38px;
+    width: 76px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+  }
+  .icon-container i{
+    font-size: 30px;
+  }
+  
+  .fa
+  {
+    font-size: 25px;
+  }
+  .fas
+  {
+    font-size: 25px;
+  }
+  
+  .card-content {
+   
+    text-align: center;
+    margin-top: 15px;
+ 
+
+  }
+
+  .card-subcontent{
+    margin-left: 10%;
+  }
+
+  .card-content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px); /* Add a slight hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card:hover .icon-container {
+    background-color: #79baff; /* Blue background color */
+  }
+  
+  .service-card:hover .icon-container i {
+    color: #fff; /* White icon color */
+    font-size: 25px;
+  
+  }
+  @media (max-width: 480px) {
+    .service-card{
+      margin-bottom: -16px;
+      /* background-color: red; */
+      margin-right: 10px;
+    }
+  }

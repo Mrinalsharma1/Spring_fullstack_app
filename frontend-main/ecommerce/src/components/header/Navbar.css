@@ -1,0 +1,112 @@
+/* Main Navbar Styling */
+.navbar {
+    background-color: #2d2d3a;
+}
+.nav-link-custom {
+    color: #60c5e4 !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 24px;
+}
+
+.navbar-nav {
+    padding-left: 5px; /* Reduced left padding */
+}
+
+.navbar-nav .nav-link {
+    color: #fff ; 
+    text-transform: uppercase;
+    padding: 15px 10px; /* Reduced left and right padding */
+    font-size: 16px;
+    margin: 0 10px; /* Spacing between tabs */
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for all tabs */
+.navbar-nav .nav-link:hover {
+    color: #60c5e4 !important; /* Light blue hover color */
+}
+
+/* Styling for the navbar-toggler button */
+.navbar-toggler {
+    background-color:transparent; /* Button background color */
+    border: none ;/* Border similar to the image */
+/* Slightly rounded corners */
+    padding: 10px; /* Padding around the icon */
+    width: 50px; /* Set button width */
+    height: 40px; /* Set button height */
+  }
+  
+  /* Styling for the navbar-toggler-icon (the three lines) */
+  .navbar-toggler-icon {
+    display: block;
+    width: 100%;
+    height: 3px; /* Height of each line */
+    background-color: white; 
+    /* color: #fff !important; */
+    
+    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); */
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+.nav_main_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav_main_btn .signup_btn,.login_btn{
+    text-decoration: none;
+    margin-right: 5px;
+    background-color:#60c5e4 ;
+    color: #fff;
+    margin-left:4px;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  
+  .nav_main_btn .signup_btn:hover{
+    background-color: darkblue;
+  }
+  .nav_main_btn .login_btn:hover{
+     background-color: darkblue;
+  }
+
+/* Responsive Dropdown */
+@media (max-width: 480px) {
+    .navbar-nav {
+        display: block;
+        text-align: left;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+        margin: 0; /* Reset margin for mobile view */
+    }
+
+    .navbar-collapse {
+        background-color: #111; /* Background for the dropdown */
+    }
+
+    .navbar-collapse.collapse.show {
+        transition: all 0.4s ease-in-out;
+    }
+     .signup_btn{
+        width: 100%; /* Full width for buttons */
+        display:flex;
+        justify-content: space-around; 
+        gap:30px;/* Space between buttons in stacked view */
+     }
+     .login_btn{
+        width: 100%; /* Full width for buttons */
+        display:flex;
+        justify-content: space-around; 
+        gap:30px;/* /* Space between buttons in stacked view */
+     }
+}

@@ -1,0 +1,87 @@
+.announcement-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-row h3 {
+    font-weight: bold;
+}
+
+.announcement-heading {
+    text-align: center;
+    color: var(--login-background-color);
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.announcement-form-group p.text-start {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.announcement-label {
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: black;
+}
+
+.announcement-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    background-color: #F9F9F9;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.announcement-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.announcement-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -20px;
+}
+
+.announcement-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.announcement-btn-primary {
+    background-color: var(--login-background-color);
+    color:white;
+}
+
+.announcement-btn-primary:hover {
+    background-color:  #3e42aebe;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .announcement-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .announcement-btn {
+        width: 100%;
+    }
+}

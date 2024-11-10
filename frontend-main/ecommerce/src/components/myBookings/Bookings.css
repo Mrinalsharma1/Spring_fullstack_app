@@ -1,0 +1,163 @@
+
+
+.location-hero-bg{
+    background-image: url("../../assets/images/mybookings.png");
+    background-size: cover; /* Ensures the image covers the element completely */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%;
+    height: 200px; /* Adjust the height based on your requirement */
+}
+
+.bookings{
+    padding: 10px;
+    display: flex;
+    
+}
+.bookings-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.bookings-card {
+ 
+    width: 100%; 
+    border: 1px solid #adadad;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.bookings-box{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bookings-container {
+    width: 100%;
+    padding: 10px;
+}
+
+.bookings-container p {
+    margin-bottom: 1px;
+    width: 90%;
+    
+}
+.bookings-container p span{
+    font-weight: bold;
+}
+
+.bookings-container input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+  
+.bookings-control{
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border-left: 1px solid #cacaca;
+}
+.bookings-control .cancel-button{
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #ac0303;;;
+    height: 40px;
+    width: 150px;
+    transition: background-color 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+}
+.bookings-control .reschedule-button{
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #60c5e4;;;
+    height: 40px;
+    width: 150px;
+    transition: background-color 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+}
+
+.bookings-control button:hover{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(-1px);
+}
+
+/* Base styles remain unchanged */
+
+/* Media Query for Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+
+    /* Adjust hero section height */
+    .location-hero-bg {
+        height: 150px; /* Reduce height for smaller screens */
+    }
+
+    /* Adjust bookings container layout */
+    .bookings {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    /* Adjust card width and spacing */
+    .bookings-card {
+        width: 90%; /* Reduce width for smaller screens */
+        margin: 5px auto; /* Center cards and reduce margin */
+        padding: 8px;
+    }
+
+    /* Make box layout stack vertically */
+    .bookings-box {
+        flex-direction: column;
+        gap: 8px; /* Reduce gap for better fit */
+    }
+
+    /* Adjust container width */
+    .bookings-container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* Paragraph and input adjustments */
+    .bookings-container p {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .bookings-container input {
+        width: 100%;
+        padding: 4px;
+        font-size: 14px; /* Adjust font size */
+    }
+
+    /* Adjust control buttons layout */
+    .bookings-control {
+        padding-left: 0;
+        border-left: none; /* Remove border */
+        flex-direction: row; /* Make buttons align side-by-side */
+        gap: 10px;
+    }
+
+    /* Style cancel and reschedule buttons */
+    .bookings-control .cancel-button,
+    .bookings-control .reschedule-button {
+        /* width: 120px; Reduce button width */
+        height: 35px; /* Reduce button height */
+        font-size: 14px;
+    }
+}

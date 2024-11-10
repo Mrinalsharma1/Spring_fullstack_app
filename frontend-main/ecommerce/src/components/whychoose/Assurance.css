@@ -1,0 +1,115 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.assurance-block{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.assurance{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:40px;
+}
+
+.assurance-title{
+    text-align: right;
+
+
+}
+.assurance-content{
+    text-align: right;
+    font-size: 15px;
+    color:#666666;
+
+
+}
+.assurance-logo{
+    border:1px solid #ede7e7;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    margin-top:-50px;
+    margin-left:20px;
+}
+logo-custom-color{
+    color:#60c5e4;
+}
+
+.left-column,.right-column{
+    padding-top: 150px;
+}
+
+.middle-title{
+    margin-bottom: 8px;
+}
+.assurance-image{
+    margin-top: 30px;
+    
+}
+.assurance-heading{
+    padding-top:20px;
+}
+.assurance-heading .middle-logo{
+    text-align: center;
+    
+}
+.assurance-heading h2{
+    text-align: center;
+}
+
+.right-column .assurance-content{
+    text-align: left;
+    font-size: 15px;
+    color:#666666;
+}
+.right-column .assurance-title{
+    text-align: left;
+}
+
+.right-column .assurance-logo{
+    border:1px solid #ede7e7;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    margin-top:-50px;
+    margin-right:20px;
+
+}
+/* .assurance_top_margin{
+    position: absolute;
+} */
+
+@media (max-width: 480px) {
+    .left-column, .right-column {
+        padding-top: 45px;
+        width:90%;
+       
+      }
+      .middle-column .assurance-image img {
+        padding-left: 20px;
+        width:100%;
+      }
+    
+    
+      .left-column .assurance-logo{
+        margin-left:10px;
+      }
+      .right-column .assurance-logo{
+        margin-right:20px;
+      }
+      .assurance_top_margin{
+        margin-top: 45px;
+      }
+    
+
+}

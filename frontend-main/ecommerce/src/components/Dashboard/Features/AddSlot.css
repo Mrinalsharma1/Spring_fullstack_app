@@ -1,0 +1,89 @@
+/* Container for the form */
+.addslot-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.addslot-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(184, 184, 184);
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.addslot-form-group label {
+    margin-top: 20px;
+}
+
+/* Form title */
+.addslot-h2 {
+    text-align: center;
+    color: #121058;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form structure */
+.addslot-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label for input fields */
+.addslot-label {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Input fields, text area, and select dropdown */
+.addslot-text input[type="text"],
+.addslot-form-group select {
+    width: 100%;
+    padding: 27px 16px 27px 16px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Placeholder styling */
+.addslot-text input::placeholder {
+    color:#121058;
+    opacity: 0.7; /* Slightly faded for better visibility */
+}
+
+/* Focused input style */
+.addslot-text input:focus,
+select:focus {
+    border-color:  #121058;
+    outline: none;
+}
+
+/* Submit button */
+.addslot-submit-btn {
+    padding: 2px;
+    background-color: #121058 !important; /* Dark blue color */
+    color: white;
+    border: none;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px !important; /* Ensure some space above the button */
+}
+
+/* Submit button hover effect */
+.addslot-submit-btn:hover {
+    background-color: #00008b;
+}

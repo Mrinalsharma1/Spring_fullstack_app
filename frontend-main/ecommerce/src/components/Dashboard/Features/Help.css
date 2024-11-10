@@ -1,0 +1,17 @@
+.heading{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+.heading .text{
+    margin-bottom: 10px;
+}
+:root {
+    
+    --login-background-color: #0c0d4d;
+   
+  }
+
+.text{
+    color:var(--login-background-color) ;
+}

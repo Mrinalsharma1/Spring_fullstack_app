@@ -1,0 +1,68 @@
+.userProfile {
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+    padding: 20px 60px 20px 70px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.profile-row input {
+    margin-top: -5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #efefef;
+}
+
+.profile-row Button:hover {
+    border: 1px solid #60c5e4;
+    color: #60c5e4;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+.profile-setting-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* Responsive styles for screens 480px and below */
+@media (max-width: 480px) {
+    .userProfile {
+        width: 90%; /* Make the profile width smaller on small screens */
+        margin: 20px; /* Adjust the margin */
+    }
+
+    .passord-container input {
+        width: 100%; /* Full width for input fields */
+        height: 35px; /* Adjust input height for smaller screens */
+    }
+
+    .passord-container span {
+        left: 92%; /* Adjust the span position */
+    }
+
+    .profile-row input {
+        width: 100%; /* Full width for input fields */
+        height: 35px; /* Adjust input height for smaller screens */
+    }
+
+    .profile-row {
+        gap: 15px; /* Adjust the gap between elements */
+    }
+}
